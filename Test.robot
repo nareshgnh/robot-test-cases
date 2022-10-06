@@ -1,0 +1,16 @@
+*** Settings ***
+Library    SeleniumLibrary
+Library    Telnet
+
+
+
+*** Test Cases ***
+LogIn
+    Open Browser    https://google.com    chrome
+    Maximize Browser Window
+TitleShouldbe
+    Title Should Be    Google
+    Input Text    //input[@title='Search']    SeleniumLibrary
+    Click Button    //div[@class='FPdoLc lJ9FBc']//input[@name='btnK']
+    Close Browser
+
