@@ -1,5 +1,4 @@
-#RobotTesting
-*** Settings ***
+Settings ***
 Library    SeleniumLibrary
 
 
@@ -13,4 +12,3 @@ TitleShouldbe
     Input Text    //input[@title='Search']    SeleniumLibrary
     Click Button    //div[@class='FPdoLc lJ9FBc']//input[@name='btnK']
     close Browser    
-    close All Browsers	
