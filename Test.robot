@@ -1,12 +1,11 @@
 *** Settings ***
 Library    SeleniumLibrary
-Library    Telnet
 
 
 
 *** Test Cases ***
 LogIn
-    Open Browser    https://google.com    chrome
+    Open Browser    https://google.com    headlesschrome
     Maximize Browser Window
 TitleShouldbe
     Title Should Be    Google
